@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box center">
+        <div class="box-1 center">
+            <h4 id="name"></h4>
+            <div class="art">
+                <img src="" alt="Artist" class="center" id="artist">
+            </div>
+            <div class="art-name">
+                <p class="title"></p>
+            </div>
+            <div class="prog">
+                <div class="time">
+                    <div class="start">
+                        <p id="start">0:00</p>
+                    </div>
+                    <div class="end">
+                        <p id="end">0:00</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="lineChild"></div>
+                </div>
+            </div>
+            <div class="msc center">
+                <div class="ctrl center" id="backward">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="ctrl center" id="playsong">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause none"></i>
+                </div>
+                <div class="ctrl center" id="forward">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="volume center">
+                    <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                </div>
+                <audio src="" class="song"></audio>
+            </div>
+            <div class="playlist">
+                <h4>Upcoming Songs</h4>
+                <ul id="playlist">
+                    <!-- Songs will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
